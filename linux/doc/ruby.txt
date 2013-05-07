@@ -1,0 +1,1 @@
+Ruby is a great, easy-to-learn scripting language.
