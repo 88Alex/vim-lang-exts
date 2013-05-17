@@ -10,6 +10,7 @@ syn match	scmComment	"\v;;;.*$"
 syn match	scmComment	"\v;.*$"
 syn match	scmInteger	"\v[\+-]\?[0123456789]\+"
 syn match	scmDecimal	"\v[\+-]\?[0123456789]\+\.[0123456789]\+"
+syn match	scmBoolean	"\v\#[TF]"
 syn region	scmString	start=/\v\"/ skip=/\v\\./ end=/\v\"/
 
 syn keyword	scmMathFunc	max min magnitude modulo quotient remainder gcd
@@ -25,6 +26,7 @@ hi def link	scmBlock	Special
 hi def link	scmComment	Comment
 hi def link	scmInteger	Integer
 hi def link	scmDecimal	Float
+hi def link	scmBoolean	Boolean
 hi def link	scmString	String
 hi def link	scmMathFunc	Function
 hi def link	scmCompFunc	Function

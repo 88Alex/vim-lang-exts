@@ -23,8 +23,8 @@ syn match	rubyChar	"\v\'.\'"
 syn match	rbOperator	"\v\=>"
 syn match	rbOperator	"\v\."
 syn match	rbOperator	"\v[\[\]]"
-syn match	rbOperator	"\v[+\-&|]{2}"
-syn match	rbOperator	"\v[+-\*/&|^]\=?"
+syn match	rbOperator	"\v[\+\-&|]{2}"
+syn match	rbOperator	"\v[\+\-\*/&|^]\=?"
 syn match	rbComment	"\v\#.*$" contains=rbTodo
 syn match	rbInstVar	"\v \@.\+"
 syn match	rbClassVar	"\v \@\@.\+"
@@ -34,7 +34,7 @@ syn match	rbFuncDecl	"\vdef +\w+$"
 syn match	rbBadName	"\v[\$\@]\?[\@]\?\(\w*\W\+\)*"
 syn region	rbMlComment	start=/=begin$/ end=/=end$/ contains=rbTodo
 syn region	rb2QString	start=/"/ skip=/\\./ end=/"/
-syn region	rb1QString	start=/'/ skip=/\\./ end=/'/s
+syn region	rb1QString	start=/'/ skip=/\\./ end=/'/
 
 hi def link rbMlComment	Comment
 hi def link rb2QString	String
