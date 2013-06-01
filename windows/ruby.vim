@@ -4,11 +4,11 @@ if exists("b:current_syntax")
 	finish
 endif
 
-syn keyword	rbBlock		do begin end if elif else
+syn keyword	rbBlock		do begin end if elsif else
 syn keyword	rbLoop		while for
 syn keyword	rbFunction	def return
 syn keyword	rbException	try raise catch rescue
-syn keyword	rbClass		class public protected private
+syn keyword	rbClass		class public protected private module
 syn keyword	rbConstant	nil self __line__ __file__ __RUBY_VERSION__
 syn keyword	rubyBool	true false
 syn keyword	rbTodo		contained TODO FIXME XXX
@@ -31,7 +31,7 @@ syn match	rbClassVar	"\v \@\@.\+"
 syn match	rbToken		"\v:.\+"
 syn match	rbClassDecl	"\vclass +\w+$"
 syn match	rbFuncDecl	"\vdef +\w+$"
-syn match	rbBadName	"\v[\$\@]\?[\@]\?\(\w*\W\+\)*"
+syn match	rbLabel___	"\v :\w\+ "
 syn region	rbMlComment	start=/=begin$/ end=/=end$/ contains=rbTodo
 syn region	rb2QString	start=/"/ skip=/\\./ end=/"/
 syn region	rb1QString	start=/'/ skip=/\\./ end=/'/
@@ -60,6 +60,6 @@ hi def link rbClassVar	Identifier
 hi def link rbToken	Label
 hi def link rbClassDecl	Typedef
 hi def link rbFuncDecl	Function
-hi def link rbBadName	Error
+hi def link rbLabel	Special
 
 let b:current_syntax = "ruby"
