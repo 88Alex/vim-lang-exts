@@ -24,8 +24,8 @@ syn keyword	scmMiscFunc	if display read exit cond define
 
 hi def link	scmBlock	Special
 hi def link	scmComment	Comment
-hi def link	scmInteger	Integer
-hi def link	scmDecimal	Float
+hi def link	scmInteger	Number
+hi def link	scmDecimal	Number
 hi def link	scmBoolean	Boolean
 hi def link	scmString	String
 hi def link	scmMathFunc	Function
