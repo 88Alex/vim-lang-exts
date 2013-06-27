@@ -8,6 +8,9 @@ Vim-Lang-Exts currently supports:
 - Ruby
 - Scheme
 
+If you would like another of your favourite languages supported, or find a glitch, create an issue.
+Or send a pull request. Don't be shy.
+
 Instructions
 ========
 
@@ -40,14 +43,14 @@ Known Glitches
 x86 Assembly
 --------
 
-- Highlights keywords within comments
+- Highlights keywords within comments (low priority)
 
 Ruby
 --------
 
-- Highlights capitals within indentifiers
+- Highlights capitals within indentifiers (moderate priority)
 
 Scheme
 --------
 
-- Does not highlight numbers
+- Does not highlight numbers (high priority, cause unknown)
